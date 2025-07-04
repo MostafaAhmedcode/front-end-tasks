@@ -1,0 +1,103 @@
+body {
+    margin: 10px;
+    font-family: Arial;
+    background-color: black;
+    color: red;
+}
+
+header {
+    background: #39627b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #00ff99;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 45px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 25px;
+}
+
+.hero .name {
+    color: #00ffff;
+}
+
+.hero p {
+    color: #f9f5f5;
+    font-size: 15.5px;
+}
+
+.btn {
+    background: #379b7d;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 228px;
+    height: 148px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    scale: 1.03;
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 8px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        background-color: #101443;
+        color: #882929;
+        font-size: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+    header {
+        background-color: #39090d;
+        color: #0b6e32;
+        font-size: 20px;
+    }
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
+}

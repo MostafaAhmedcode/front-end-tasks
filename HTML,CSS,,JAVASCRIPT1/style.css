@@ -1,0 +1,30 @@
+body {
+    background-color: #222c61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+#rocket {
+    font-size: 60px;
+    transition: transform 2s linear;
+    position: relative;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
