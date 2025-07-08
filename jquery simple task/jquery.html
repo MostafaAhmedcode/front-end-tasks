@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Programming FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .faq-item {
+            margin-bottom: 10px;
+        }
+        
+        .question {
+            cursor: pointer;
+            background: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        
+        .answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Programming Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="question">What is Python?</div>
+        <div class="answer">Python is a popular, high-level programming language known for its simplicity, readability, and wide range of applications like web development, data analysis, and AI.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">What is OOP (Object-Oriented Programming)?</div>
+        <div class="answer">OOP is a programming paradigm based on the concept of "objects" which contain data and methods. It promotes code reuse, modularity, and organization through concepts like classes, inheritance, and encapsulation.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">What is an API?</div>
+        <div class="answer">API stands for Application Programming Interface. It allows different software applications to communicate with each other by exposing specific functionalities or data.</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".question").click(function() {
+            $(this).next(".answer").slideToggle();
+            $(".answer").not($(this).next()).slideUp();
+        });
+    </script>
+
+</body>
+
+</html>
